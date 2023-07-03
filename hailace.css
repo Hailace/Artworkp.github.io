@@ -1,0 +1,110 @@
+/* CSS styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: url('artwork/flycatcher.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.logo-text {
+  color: white;
+  font-weight: bold;
+  /* Add any additional styles as needed */
+}
+
+
+nav ul {
+  list-style: none;
+  display: none; /* Hide the navigation links by default */
+  position: absolute;
+  top: 10%; /* Position the menu below the menu icon */
+  left: calc(100% - 50px); /* Move the menu slightly to the left */
+  transform: translateX(-100%);
+  background-color: sky blue; /* Change the background color to blue */
+  padding: 10px;
+}
+
+
+
+nav ul.open {
+  display: flex; /* Show the navigation links when the class "open" is added */
+  flex-direction: column;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+
+.menu-icon.open {
+  color: #000; /* Change the color when the menu is open */
+}
+
+.main {
+  padding: 40px;
+}
+
+.hero {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 40px;
+}
+
+.artwork img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.artwork img:hover {
+  opacity: 0.8;
+}
+
+.contact {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 150px; /* Adjust the value as needed */
+  height: auto;
+  border-radius: 50%; /* Make the image circular */
+}
