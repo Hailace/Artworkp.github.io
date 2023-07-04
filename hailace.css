@@ -7,9 +7,9 @@ body {
 }
 
 header {
-  background-image: url('artwork/flycatcher.jpg');
+  background-image: url('artwork/bg.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center 75%;
   color: #fff;
   padding: 20px;
   display: flex;
@@ -51,9 +51,10 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #000;
+  color: #fff; /* Set the text color to white */
   text-decoration: none;
 }
+
 
 .menu-icon {
   cursor: pointer;
@@ -83,11 +84,17 @@ nav ul li a {
 }
 
 .artwork img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  max-width: 400px;
+  max-height: 400px;
   transition: opacity 0.3s ease;
   cursor: pointer;
+  border: 4px solid #fff; /* Set the border style and color */
+  border-radius: 10px; /* Apply rounded corners to the border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect to the border */
 }
+
 
 .artwork img:hover {
   opacity: 0.8;
@@ -104,7 +111,15 @@ nav ul li a {
 }
 
 .logo img {
-  max-width: 150px; /* Adjust the value as needed */
+  width: 300px; /* Adjust the width as needed */
+  max-width: 150%; /* Ensure the logo maintains its aspect ratio */
   height: auto;
-  border-radius: 50%; /* Make the image circular */
+  border-radius: 50%;
+}
+
+
+
+.artwork {
+  display: flex;
+  flex-direction: column;
 }
