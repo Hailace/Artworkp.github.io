@@ -1,9 +1,9 @@
 // Your other JavaScript code...
 
 // Disqus configuration
-var disqus_config = function () {
+    var disqus_config = function () {
   this.page.url = window.location.href;
-  this.page.identifier = "artwork1";
+  this.page.identifier = "https://hailace.github.io/artwork1.html?image=artwork/landscape1.jpg";
 };
 
 // Append Disqus script dynamically
