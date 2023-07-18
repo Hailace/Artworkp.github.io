@@ -23,3 +23,6 @@ function rearrangeImages() {
 rearrangeImages();
 
 
+function openEnlargedImage(imageUrl) {
+  window.location.href = "enlarged.html?image=" + encodeURIComponent(imageUrl);
+}
