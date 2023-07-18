@@ -1,5 +1,5 @@
 var disqus_config = function () {
-  this.page.url = window.location.href;  // Set the page URL dynamically
+  this.page.url = 'https://hailace.github.io/artwork1.html?image=artwork/landscape1.jpg';  // Set the page URL dynamically
   this.page.identifier = "enlarged-image";  // Set a unique identifier for the page
 };
 
